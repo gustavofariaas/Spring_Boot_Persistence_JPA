@@ -19,15 +19,15 @@ public interface RepositoryCliente extends JpaRepository<Cliente, Integer> {
     void deleteByNome(String nome);
 
 
-//    //Query criada manualmente
-//    @Query(value = "select c from cliente c where c.nome like :nome")
-//    List<Cliente> encontrarNome( @Param("nome") String nome);
-//
-//    //Query Nativa
-//    @Query(value = "select * from cliente c where c.nome like '%:nome%' ", nativeQuery = true)
-//    List<Cliente> encontrarNomeComQueryNativa( @Param("nome") String nome);
-//
-//    @Query("delete from cliente c where c.nome =:nome")
-//    @Modifying //Usar modifing para modificar campo
-//    void deletarPorNome(@Param("nome") String nome);
+    //Query criada manualmente
+    @Query(value = "select c from cliente c where c.nome like :nome")
+    List<Cliente> encontrarNome( @Param("nome") String nome);
+
+    //Query Nativa
+    @Query(value = "select * from cliente c where c.nome like '%:nome%' ", nativeQuery = true)
+    List<Cliente> encontrarNomeComQueryNativa( @Param("nome") String nome);
+
+    @Query("delete from cliente c where c.nome =:nome")
+    @Modifying //Usar modifing para modificar campo
+    void deletarPorNome(@Param("nome") String nome);
 }

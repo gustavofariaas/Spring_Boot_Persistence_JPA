@@ -20,6 +20,9 @@ import java.util.List;
 @SpringBootApplication
 public class VendasApplication {
 
+    //To run the Application, Need to comment the RepositoryCliente, JDBC and JPA
+
+
     @Bean
     public CommandLineRunner init(
             @Autowired Clientes clientes,

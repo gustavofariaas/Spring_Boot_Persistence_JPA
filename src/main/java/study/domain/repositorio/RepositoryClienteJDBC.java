@@ -14,7 +14,7 @@ import java.util.List;
 public class RepositoryClienteJDBC {
 
 //    private static String INSERT_with_altura =  "insert into cliente (nome,altura) values (?,?) ";
-    /*
+
     private static String INSERT =  "insert into cliente (nome) values ? ";
     private static String SELECTALL= "SELECT * FROM CLIENTE ";
     private static String UPDATE = "UPDATE cliente set nome = ?";
@@ -93,5 +93,5 @@ public class RepositoryClienteJDBC {
 //        });
 //    }
 
-     */
+
 }

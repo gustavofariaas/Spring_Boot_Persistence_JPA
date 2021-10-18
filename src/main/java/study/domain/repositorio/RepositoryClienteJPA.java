@@ -13,7 +13,7 @@ import java.util.List;
 
 @Repository
 public class RepositoryClienteJPA {
-/*
+
     @Autowired
     private EntityManager entityManager;
 
@@ -59,5 +59,5 @@ public class RepositoryClienteJPA {
     }
 
 
- */
+
 }
